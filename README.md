@@ -1,1 +1,1 @@
-<center>![logo](github/logo.png)</center>
+![logo](github/logo.png)
