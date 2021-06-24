@@ -1,2 +1,1 @@
-<center>![logo](../src/assets/logo.svg)</center>
-<hr>
+<center>![logo](github/logo.png)</center>
