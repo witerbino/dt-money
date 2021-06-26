@@ -8,7 +8,8 @@ export class Utils {
   }
 
   public static dateFormat(data: string): string {
-    return new Intl.DateTimeFormat('pt-BR').format(new Date(data));
+    return new Intl.DateTimeFormat('pt-BR')
+      .format(new Date(data));
   }
 
 }

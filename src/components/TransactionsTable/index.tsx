@@ -3,12 +3,12 @@ import { Utils } from '../../utils/Utils';
 import { Container } from './styles';
 
 type Transaction = {
-  id: number;
+  id?: number;
   title: string;
   amount: number;
   type: string;
   category: string;
-  createdAt: string;
+  createdAt?: string;
 }
 
 export function TransactionsTable() {
@@ -35,7 +35,7 @@ export function TransactionsTable() {
                 </td>
                 <td>{transaction.category}</td>
                 <td>
-                  {Utils.dateFormat(transaction.createdAt)}
+                  {Utils.dateFormat(transaction.createdAt as string)}
                 </td>
               </tr>
             )

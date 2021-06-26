@@ -2,6 +2,7 @@ import IconEntradas from '../../assets/income.svg';
 import IconSaidas from '../../assets/outcome.svg';
 import IconTotal from '../../assets/total.svg';
 import { useTransactions } from '../../hooks/useTransactions';
+import { Utils } from '../../utils/Utils';
 
 import { Container } from './styles';
 
@@ -20,10 +21,7 @@ export function Summary() {
           <img src={IconEntradas} alt="entradas" />
         </header>
         <strong>
-          {new Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-          }).format(getTotalIncomeTransactions())}
+          {Utils.numberFormat(getTotalIncomeTransactions())}
         </strong>
       </section>
 
@@ -33,10 +31,7 @@ export function Summary() {
           <img src={IconSaidas} alt="saídas" />
         </header>
         <strong>
-          -{new Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-          }).format(getTotalOutcomeTransactions())}
+          -{Utils.numberFormat(getTotalOutcomeTransactions())}
         </strong>
       </section>
 
@@ -46,10 +41,7 @@ export function Summary() {
           <img src={IconTotal} alt="total" />
         </header>
         <strong>
-          {new Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-          }).format(getTotalValueTransactions())}
+          {Utils.numberFormat(getTotalValueTransactions())}
         </strong>
       </section>
     </Container>

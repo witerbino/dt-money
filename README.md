@@ -1,12 +1,13 @@
 <div align="center">
+  <br/>
   <img src="github/logo.png" />
+  <br/>
+  <br/>
+  <p>O <i>dt.money</i> é uma aplicação que realiza o controle de despesas <i>(entradas e saídas)</i>.</p>
+
+<p>Nesse projeto foi utilizado os principais conceitos do <strong>ReactJs<strong>, como components, states e props. Além dos principais hooks <strong>(useState, useEffect e useContext)<strong>.</p>
+<br/>
 </div>
-
-# Projeto
-
-O _dt.money_ é uma aplicação que realiza o controle de despesas _(entradas e saídas)_.
-
-Nesse projeto foi utilizado os principais conceitos do **ReactJs**, como components, states e props. Além dos principais hooks **(useState, useEffect e useContext)**.
 
 # Tecnologias
 
